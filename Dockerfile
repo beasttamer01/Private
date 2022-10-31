@@ -1,5 +1,5 @@
 FROM python:3.9.2-slim-buster
-ENV DEBIAN_FRONTEND=noninteractive
+ENV DEBARN_FRONTEND=noninteractive
 ENV TZ="Asia/Kolkata"
 RUN apt -qq update && apt -qq install -y ffmpeg mediainfo build-essential
 COPY . .

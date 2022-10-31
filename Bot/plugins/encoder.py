@@ -34,11 +34,11 @@ async def add_task(message):
                 LOG.info(f'ERror while ffmpeg progress\n' +e)  
             output = filepath.rsplit('.',1)[0]
             if '.mkv' in filepath:
-                output = output+'_IA.mkv'    
+                output = output+'_AR.mkv'    
             else:
-                output = output+'_IA.mp4'       
+                output = output+'_AR.mp4'       
                 
-            file_name = output.rsplit('/', 1)[1].replace('_IA', "")
+            file_name = output.rsplit('/', 1)[1].replace('_AR', "")
             try: #MSG EDIT AND EDIT
                 await msg.edit(f'**Encoding Completed')   
                 file =  await msg.reply_document(output, caption=f"**{check_resolution}**", file_name=file_name)  

@@ -11,9 +11,9 @@ def ffmpeg_settings(id, input, FT):
         crf = 28
     output = input.rsplit('.',1)[0]
     if '.mkv' in input:
-        output = output+'_IA.mkv'    
+        output = output+'_AR.mkv'    
     else:
-        output = output+'_IA.mp4'    
+        output = output+'_AR.mp4'    
     
     if vcodec == 'x264':
         vcodecs = 'libx264'
@@ -59,9 +59,9 @@ def ffmpeg_settings(id, input, FT):
 #     vcodec = check_vcodec_settings(id)
     
 #     if '.mkv' in input:
-#         output = output+'_IA.mkv'    
+#         output = output+'_AR.mkv'    
 #     else:
-#         output = output+'_IA.mp4'
+#         output = output+'_AR.mp4'
     
 #     if vcodec == 'x264':
 #         vcodecs = 'libx264'
