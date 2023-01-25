@@ -1,21 +1,12 @@
-from flask import
+from flask import Flask 
 
-Flask
+app = Flask(name) 
 
-app =
+@app.route('/') 
 
-Flask(__name__)
+def hello_world(): 
+    return 'GreyMatters' 
+       
 
-@app.route('/')
-
-def hello_world():
-
-return
-
-'GreyMatters'
-
-if __name__ ==
-
-"__main__":
-
-app.run()
+if __name__ == "__main__": 
+    app.run()
