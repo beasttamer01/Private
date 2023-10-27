@@ -11,13 +11,13 @@ LOG.setLevel(level=logging.INFO)
 #<-----------Variables-------------->
 LOG.info('❤️ Checking Bot Variables.....')
 TRIGGERS = os.environ.get("TRIGGERS", "/ !").split(" ")
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '') #BOT Token Add
-API_ID = int(os.environ.get('API_ID', )) #Telgram Api id
-APP_HASH = os.environ.get('APP_HASH',' ')# Telgram App hash  
-OWNER_ID = int(os.environ.get('OWNER_ID', ))
-MONGO_DB = ''
-FILES_CHANNEL = os.environ.get("FILES_CHANNEL", )
-BOT_NAME = os.environ.get('BOT_NAME', '')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '5408040751:AAGyYeUr0P8YFb01WOWf1G2zkm6FFbjjEt4') #BOT Token Add
+API_ID = int(os.environ.get('API_ID', 15682957 )) #Telgram Api id
+APP_HASH = os.environ.get('APP_HASH','00b8b3714cee0ba2941091b7cc5578e7')# Telgram App hash  
+OWNER_ID = int(os.environ.get('OWNER_ID', 2090127712))
+MONGO_DB = 'mongodb+srv://nsfwleech:nsfwleech@cluster0.in2msxb.mongodb.net/?retryWrites=true&w=majority'
+FILES_CHANNEL = os.environ.get("FILES_CHANNEL", -1001746042894)
+BOT_NAME = os.environ.get('BOT_NAME', 'CompressorPro_bot')
 #<---------------Connecting-------------->
 if BOT_TOKEN is not None:
     try:
